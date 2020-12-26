@@ -1,0 +1,83 @@
+.searchResult {
+    /* image_searchResult, searchResult__heart, searchResult__info가 수평 정렬 */
+    display: flex;
+    position: relative;
+    margin: 20px;
+    padding: 20px;
+    border-bottom: 1px solid lightgray;
+    /* opacity: 1; */
+    cursor: pointer;
+}
+
+.searchResult:hover {
+    /* 불투명도 */
+    opacity: 0.8;
+}
+
+.searchResult > img {
+    height: 200px;
+    width: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.searchResult__info {
+    /* display: flex; 한다음 flex-direction: column; 하는 이유가 뭐지 */
+    display: flex;
+    flex-direction: column;
+    /* 이건 정확히 뭐하는거야? */
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+.searchResult__heart {
+    /* 해당 div안에서 절대적인 위치를 갖는다 초기값 0,0인듯 */
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+.searchResult__infoTop {
+    /* vw단위가 뭐야? */
+    /* 얘 때문에 사진 크기 같아지네 */
+    width: 40vw;
+}
+
+.searchResult__infoTop > h3 {
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.searchResult__infoTop > p {
+    margin-top: 10px;
+    font-size: 13px;
+    color: gray;
+}
+
+.searchResult__infoBottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchResult__stars {
+    display: flex;
+    align-items: center;
+}
+
+.searchResult__star {
+    color: red;
+}
+
+.searchResults__price {
+    /* searchResult에 position: relative;가 없으면 
+    모든 searchResults__price의 요소가 
+    position: absolute;에 의해 모인다 */
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+
+.searchResults__price > p{
+    text-align: right;
+}
+
