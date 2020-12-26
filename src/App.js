@@ -25,11 +25,16 @@
 //              미리 프로젝트 만들어놨으면, Use an existing project
 //              ? What do you want to use as your public directory? (public) build
 //              ? Configure as a single-page app (rewrite all urls to /index.html)? (y/N) y
-//              ? Set up automatic builds and deploys with GitHub? Yes
-//              ? File build/index.html already exists. Overwrite? (y/N) y
-//              ? Set up the workflow to run a build script before every deploy? Yes
-//              ? What script should be run before every deploy? (npm ci && npm run build) npm run build
+//              ? Set up automatic builds and deploys with GitHub? n
+//              ? File build/index.html already exists. Overwrite? (y/N) n
+//              
+//              Welcome... Firebase Hostiong Setup Complete가 뜨면 
+//              public > index.html과 build > index.html이 잘못됐을 가능성이 있다(실제로 public > index.html이 firebase의 뭔가로 덮여있었음)
+//              그렇게 되있으면 다시 예전 public > index.html로 돌리고 다시 시도하면 됌. build > index.html는 npm run build로 다시 돌아갈 수 있음
+//              원인은 아마 선택 부분에서 잘못 건드린 것 같다
+//
 //              ......
+// npm run build
 // firebase deploy
 
 import './App.css';
