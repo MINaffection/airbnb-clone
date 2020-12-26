@@ -37,6 +37,11 @@
 // npm run build
 // firebase deploy
 
+// 수정 사항 있으면 수정하고 저장한 다음
+// npm run build
+// firebase deploy
+
+
 import './App.css';
 import Home from './js/Home'
 import Header from './js/Header'
